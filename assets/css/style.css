@@ -14,12 +14,12 @@ h2 {
 h3, 
 p,
 li {
-    color: white;
+    color: black;   
 }
 
 img {
-    width: 100%;
-    height: auto;
+    width: 90%;
+    height: 30%;
     max-width: 100%;
 }
 
@@ -52,24 +52,24 @@ nav a:hover {
     color: green;
 }
 
-#banner {
+/* #banner {
     width: 100%;
     height: auto;
-    background-color: white;
-}
+    background-color: yellow;
+} */
 
 #banner img {
-    width: 60%;
-    height: auto;
+    width: 90%;
+    height: 20%;
 }
 
 .service {
     display: inline-block;
     text-align:center;
-    background-color: purple;
-    border: 5px solid green;
+    background-color: maroon;
+    border: 5px solid yellow;
     border-radius: 5px;
-    color: darkred;
+    color: black;
     font-size: 2em;
     padding: 20px;
     margin: 10px;
