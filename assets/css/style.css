@@ -1,40 +1,50 @@
-html,
-body {
+/* Reset margins and paddings for a clean slate */
+html, body {
     margin: 0;
     padding: 0;
-    background-color: beige;
+    background-color: #f5f5dc; /* Light beige for a softer look */
+    font-family: Arial, sans-serif; /* Web-safe font */
     text-align: center;
+    color: #333; /* Dark grey for better readability */
 }
 
-h1,
-h2 {
-    color: darkred;
+/* Style for headings */
+h1, h2 {
+    color: #8b0000; /* Dark red for headings */
+    margin: 20px 0;
 }
 
-h3, 
-p,
-li {
-    color: black;   
+/* Style for smaller text elements */
+h3, p, li {
+    color: #000; /* Black for general text */
+    margin: 10px 0;
 }
 
+/* Responsive image styling */
 img {
-    width: 90%;
-    height: 30%;
+    width: 100%;
+    height: auto;
     max-width: 100%;
 }
 
+/* Main content container */
 main {
-    margin: 0 20%;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px; /* Adjust max-width for better layout on larger screens */
 }
 
+/* Navigation styling */
 nav {
-    background-color: beige;
+    background-color: #f5f5dc; /* Matches background color */
     padding: 10px;
+    border-bottom: 2px solid #8b0000; /* Underline for emphasis */
 }
 
 nav ul {
     list-style-type: none;
-    text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav li {
@@ -43,45 +53,43 @@ nav li {
 
 nav a {
     text-decoration: none;
-    font-size: 1.6em;
-    color: maroon;
-    margin-right: 25px;
+    font-size: 1.2em; /* Slightly smaller for better scaling */
+    color: #800000; /* Maroon color for links */
+    margin: 0 15px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
 nav a:hover {
-    color: green;
+    color: #006400; /* Dark green for hover effect */
 }
 
-/* #banner {
-    width: 100%;
-    height: auto;
-    background-color: yellow;
-} */
-
+/* Banner styling */
 #banner img {
-    width: 90%;
-    height: 20%;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
 }
 
+/* Service section styling */
 .service {
     display: inline-block;
-    text-align:center;
-    background-color: maroon;
-    border: 5px solid yellow;
-    border-radius: 5px;
-    color: black;
-    font-size: 2em;
+    text-align: center;
+    background-color: #800000; /* Maroon background */
+    border: 5px solid #ffff00; /* Yellow border */
+    border-radius: 10px; /* Slightly rounded corners */
+    color: #000; /* Black text */
+    font-size: 1.5em; /* Adjusted font size for better readability */
     padding: 20px;
     margin: 10px;
 }
 
+/* Table styling */
 table {
-    border: 3px solid black;
+    border-collapse: collapse; /* Ensure borders are clean and connected */
     width: 100%;
+    margin: 20px 0;
 }
-  
-td,
-th {
-    border: 1px solid black;
-    padding: 5px;
+
+td, th {
+    border: 1px solid #000; /* Black border */
+    padding: 10px; /* Increased padding for better readability */
 }
