@@ -2,21 +2,22 @@
 html, body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5dc; /* Light beige for a softer look */
-    font-family: Arial, sans-serif; /* Web-safe font */
-    text-align: center;
-    color: #333; /* Dark grey for better readability */
+    background-color: #f5f5dc; /* Light beige background */
+    font-family: 'Arial', sans-serif; /* Clean, web-safe font */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6; /* Improved readability with better line spacing */
 }
 
 /* Style for headings */
 h1, h2 {
     color: #8b0000; /* Dark red for headings */
     margin: 20px 0;
+    font-weight: 700; /* Bold font for headings */
 }
 
 /* Style for smaller text elements */
 h3, p, li {
-    color: #000; /* Black for general text */
+    color: #333; /* Dark grey for general text */
     margin: 10px 0;
 }
 
@@ -31,13 +32,13 @@ img {
 main {
     margin: 0 auto;
     padding: 20px;
-    max-width: 1200px; /* Adjust max-width for better layout on larger screens */
+    max-width: 1200px; /* Max width for larger screens */
 }
 
 /* Navigation styling */
 nav {
     background-color: #f5f5dc; /* Matches background color */
-    padding: 10px;
+    padding: 15px 20px; /* Added padding for better spacing */
     border-bottom: 2px solid #8b0000; /* Underline for emphasis */
 }
 
@@ -45,22 +46,25 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    justify-content: center; /* Center-align navigation items */
 }
 
 nav li {
-    display: inline;
+    margin: 0 15px; /* Space between navigation items */
 }
 
 nav a {
     text-decoration: none;
-    font-size: 1.2em; /* Slightly smaller for better scaling */
+    font-size: 1.2em; /* Slightly larger for readability */
     color: #800000; /* Maroon color for links */
-    margin: 0 15px;
-    transition: color 0.3s; /* Smooth transition for hover effect */
+    transition: color 0.3s, border-bottom 0.3s; /* Smooth transition for hover effects */
+    padding-bottom: 5px; /* Padding for border effect */
 }
 
 nav a:hover {
     color: #006400; /* Dark green for hover effect */
+    border-bottom: 2px solid #006400; /* Underline effect on hover */
 }
 
 /* Banner styling */
@@ -73,13 +77,14 @@ nav a:hover {
 .service {
     display: inline-block;
     text-align: center;
-    background-color: #800000; /* Maroon background */
-    border: 5px solid #ffff00; /* Yellow border */
-    border-radius: 10px; /* Slightly rounded corners */
-    color: #000; /* Black text */
-    font-size: 1.5em; /* Adjusted font size for better readability */
+    background-color: yellow; /* Maroon background */
+    border: 3px solid black; /* Yellow border for contrast */
+    border-radius: 10px; /* Rounded corners */
+    color: #fff; /* White text for better contrast */
+    font-size: 1.5em; /* Font size for emphasis */
     padding: 20px;
     margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 /* Table styling */
@@ -90,6 +95,12 @@ table {
 }
 
 td, th {
-    border: 1px solid #000; /* Black border */
-    padding: 10px; /* Increased padding for better readability */
+    border: 1px solid #ccc; /* Light grey border for a softer look */
+    padding: 10px;
+    text-align: left; /* Align text to the left for better readability */
+}
+
+th {
+    background-color: #f5f5dc; /* Header background matches main background */
+    color: #333; /* Dark grey text for headers */
 }
